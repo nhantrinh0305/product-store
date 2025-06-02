@@ -15,7 +15,7 @@ dotenv.config();
 
 const app = express();
 const PORT = process.env.PORT || 3000;
-const __dirname = path.resolve();
+const __dirname = path.resolve(); //product-store/backends
 
 app.use(express.json());
 app.use(cors());

@@ -65,10 +65,10 @@ async function seedDatabase() {
     }
 
     console.log("Database seeded successfully");
-    process.exit(0); // success code
+    process.exit(0); 
   } catch (error) {
     console.error("Error seeding database:", error);
-    process.exit(1); // failure code
+    process.exit(1); 
   } 
 }
 

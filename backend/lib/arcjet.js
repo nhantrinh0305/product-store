@@ -1,4 +1,4 @@
-import arcjet, { tokenBucket, shield, detectBot, slidingWindow } from "@arcjet/node";
+import arcjet, { tokenBucket, shield, detectBot} from "@arcjet/node";
 
 import "dotenv/config";
 
@@ -19,9 +19,9 @@ export const aj = arcjet({
     // rate limiting
     tokenBucket({
       mode: "LIVE",
-      refillRate: 30,
+      refillRate: 15,
       interval: 5,
-      capacity: 20,
+      capacity: 15,
     }),
   ],
 });

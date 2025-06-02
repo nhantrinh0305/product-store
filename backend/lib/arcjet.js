@@ -19,9 +19,9 @@ export const aj = arcjet({
     // rate limiting
     tokenBucket({
       mode: "LIVE",
-      refillRate: 15,
-      interval: 5,
-      capacity: 15,
+      refillRate: 5,
+      interval: 10,
+      capacity: 5,
     }),
   ],
 });

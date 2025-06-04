@@ -7,7 +7,7 @@ const router = express.Router();
 
 const USER = {
   username: "admin",
-  password: "123456", 
+  password: "admin123", 
 };
 
 

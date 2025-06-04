@@ -7,7 +7,7 @@ export const aj = arcjet({
   key: process.env.ARCJET_KEY,
   characteristics: ["ip.src"],
   rules: [
-    // shield protects your app from common attacks e.g. SQL injection, XSS, CSRF attacks
+    // shield protects your app from common attacks 
     shield({ mode: "LIVE" }),
     detectBot({
       mode: "LIVE",

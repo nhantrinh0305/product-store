@@ -52,7 +52,7 @@ function ProductPage() {
       </button>
 
       <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
-        {/* PRODUCT IMAGE */}
+      
         <div className="rounded-lg overflow-hidden shadow-lg bg-base-100">
           <img
             src={currentProduct?.image}
@@ -61,7 +61,7 @@ function ProductPage() {
           />
         </div>
 
-        {/* PRODUCT FORM */}
+     
         <div className="card bg-base-100 shadow-lg">
           <div className="card-body">
             <h2 className="card-title text-2xl mb-6">Edit Product</h2>
@@ -73,7 +73,7 @@ function ProductPage() {
               }}
               className="space-y-6"
             >
-              {/* PRODUCT NAME */}
+             
               <div className="form-control">
                 <label className="label">
                   <span className="label-text text-base font-medium">Product Name</span>
@@ -87,7 +87,7 @@ function ProductPage() {
                 />
               </div>
 
-              {/* PRODUCT PRICE */}
+            
               <div className="form-control">
                 <label className="label">
                   <span className="label-text text-base font-medium">Price</span>
@@ -103,7 +103,7 @@ function ProductPage() {
                 />
               </div>
 
-              {/* PRODUCT IMAGE URL */}
+             
               <div className="form-control">
                 <label className="label">
                   <span className="label-text text-base font-medium">Image URL</span>
@@ -117,7 +117,7 @@ function ProductPage() {
                 />
               </div>
 
-              {/* FORM ACTIONS */}
+              
               <div className="flex justify-between mt-8">
                 <button type="button" onClick={handleDelete} className="btn btn-error">
                   <Trash2Icon className="size-4 mr-2" />

@@ -1,20 +1,20 @@
 import Navbar from "./components/Navbar";
 import HomePage from "./pages/HomePage";
 import ProductPage from "./pages/ProductPage";
-import LoginPage from "./pages/LoginPage"; // 👈 Add this line
+import LoginPage from "./pages/LoginPage"; 
 
-import { Routes, Route, Navigate } from "react-router-dom"; // 👈 Add Navigate
+import { Routes, Route, Navigate } from "react-router-dom"; 
 import { useThemeStore } from "./store/useThemeStore";
-import { useAuthStore } from "./store/useAuthStore"; // 👈 Add this line
+import { useAuthStore } from "./store/useAuthStore"; 
 import { Toaster } from "react-hot-toast";
 
 function App() {
   const { theme } = useThemeStore();
-  const { isAuthenticated } = useAuthStore(); // 👈 Check if logged in
+  const { isAuthenticated } = useAuthStore(); 
 
   return (
     <div className="min-h-screen bg-base-200 transition-colors duration-300" data-theme={theme}>
-      {isAuthenticated && <Navbar />} {/* 👈 Show navbar only if logged in */}
+      {isAuthenticated && <Navbar />} {}
 
       <Routes>
         <Route

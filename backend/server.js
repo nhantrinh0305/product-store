@@ -8,6 +8,7 @@ import path from "path";
 
 
 import productRoutes from "./routes/productRoutes.js";
+import authRoutes from "./routes/authRoutes.js"
 import { sql } from "./config/db.js";
 import { aj } from "./lib/arcjet.js";
 
@@ -58,6 +59,8 @@ app.use(async (req, res, next) => {
 });
 
 app.use("/api/products", productRoutes);
+app.use("/api", authRoutes);
+
 
 if (process.env.NODE_ENV === "production") {
   // serve our react app
